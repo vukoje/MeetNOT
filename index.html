@@ -67,15 +67,18 @@
               </div>
 
               <div class="col-md-8 col-sm-6">
-                 <input name="" type="text" placeholder="Your Email *"/>
+                 <input name="" type="text" id='email1'  placeholder="Your Email *"/>
+                 <h5 id='errorMsg1' style="color:red"></h5>
               </div>
 
               <div class="col-md-4 col-sm-6">
-                <div class="button">Subscribe</div>
+                <div class="button" onclick="submit(email1, '#errorMsg1');">Subscribe</div>                 
               </div>
             </div>
           </div>
-        </div>
+        </div>        
+
+    </div>
       </div>
     </div>
 
@@ -171,14 +174,16 @@
 
       <div class="row space">
         <div class="col-md-8 col-sm-6">
-          <input name="" type="text" placeholder="Your Email *"/>
+          <input name="" type="text" id='email2' placeholder="Your Email *"/>
+          <h5 id='errorMsg2' style="color:red"></h5>
         </div>
 
         <div class="col-md-4 col-sm-6">
-          <div class="button">Subscribe</div>
+          <div class="button" onclick="submit(email2, '#errorMsg2')">Subscribe</div>
         </div>
       </div>
     </div>
+</div>
 
     <div class="copyright">
       <div class="col-md-12">
@@ -187,11 +192,6 @@
       </div>
     </div>
 
-
-    <!-- POPUP --> 
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -209,6 +209,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="assets/js/smooth-scroll.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src='assets/js/index.js'></script>    
     <script>smoothScroll.init();</script>
   </body>
 </html>
