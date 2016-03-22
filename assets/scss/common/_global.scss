@@ -1,0 +1,243 @@
+body {
+  font-family: $regular-font;
+  font-size: $normal;
+  color: $dark;
+}
+
+h1 {
+  font-family: $header-font;
+  color: white;
+  font-size: $big;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: $header-font;
+  font-size: $medium;
+  font-weight: 300;
+  color: white;
+}
+
+.nav {
+  text-align: right;
+  color: white;
+
+  a {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-weight: 400;
+
+    &:hover, &:focus {
+      text-decoration: none;
+      border-bottom: 3px solid $light;
+    }
+  }
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space {
+  margin-top: $big-space;
+}
+
+.extra-space {
+  margin-top: $big-space + $small-space + $small-space;
+}
+
+.line-separator {
+  width: 2em;
+  height: 2px;
+  background: white;
+}
+
+input {
+  background: #f2f2f2;
+  border: 1px solid #cccccc;
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  color: #999999;
+
+  &:focus {
+    outline:none;
+  }
+}
+
+.button {
+  background: $light;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    transition: background 0.5s ease;
+    background: $dark;
+    cursor: pointer;
+  }
+}
+
+.header {
+  background: $dark;
+  background-image: ( -87deg, rgb(45,48,63) 15%, rgb(141,62,67) 75%, rgb(237,75,70) 100%);
+    background-image: -moz-linear-gradient( -87deg, rgb(45,48,63) 15%, rgb(141,62,67) 75%, rgb(237,75,70) 100%);
+    background-image: -webkit-linear-gradient( -87deg, rgb(45,48,63) 15%, rgb(141,62,67) 75%, rgb(237,75,70) 100%);
+    background-image: -ms-linear-gradient( -87deg, rgb(45,48,63) 15%, rgb(141,62,67) 75%, rgb(237,75,70) 100%);
+  padding-top: $big-space;
+  padding-bottom: $big-space + 30px;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.info {
+  margin-top: $small-space;
+  height: 150px;
+
+  img {
+    height: 40px;
+  }
+}
+
+.box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+
+  h1 {
+    font-size: $medium + 0.5em; 
+    font-weight: 700;
+  }
+}
+
+.dark {
+  @extend .box;
+  background: $dark;
+}
+
+.light {
+  @extend .box;
+  background: $light;
+}
+
+.newsletter {
+  text-align: center;
+
+  h2 {
+    color: $dark;
+    font-weight: 700;
+  }
+
+  .line-separator {
+    background: $dark;
+  }
+}
+
+.subscribe {
+  background: #f3f3f3;
+  padding: 20px $small-space $small-space;
+  position: absolute;
+  width: 85%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 35px;
+
+  p {
+    color: #999999;
+  }
+
+  input {
+    background: transparent;
+  }
+}
+
+.newsletter {
+  width: 60%;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: $big-space;
+  padding-bottom: $big-space;
+
+  p {
+    margin: 0;
+  }
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-content {
+  background: #f1f4f9;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark;
+  padding-top: $big-space;
+
+  h1 {
+    font-weight: 300;
+    color: $dark;
+    font-family: $regular-font;
+    font-size: 2em;
+  }
+
+  h2 {
+    font-weight: 800;
+    color: $dark;
+    font-family: $regular-font;
+    font-size: 2em;
+  }
+}
+
+@media(max-width:767px){
+  h1 {
+    text-align: center;
+    font-size: $big - 1em;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: $medium - 0.2em;
+  }
+
+  .subscribe {
+    top: 0px;
+  }
+
+  .nav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $small-space;
+  }
+
+  .logo {
+    img {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+      width: 800px;
+      margin: 30px auto;
+  }
+} 

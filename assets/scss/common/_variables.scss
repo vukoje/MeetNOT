@@ -1,0 +1,22 @@
+/** Font family **/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,600,600italic,700italic,800italic);
+
+$regular-font: 'Open Sans', sans-serif;
+$header-font: 'Lato', sans-serif;
+
+/** Font size **/
+
+$big: 3.2em;
+$medium: 1.6em;
+$normal: 1.4em;
+
+/** Color **/
+
+$dark: #2d303f;
+$light: #ed4b46;
+
+/** Space **/
+
+$small-space: 30px;
+$big-space: 80px;

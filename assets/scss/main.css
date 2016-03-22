@@ -1,0 +1,50 @@
+/** Font family **/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,600,600italic,700italic,800italic);
+/** Font size **/
+/** Color **/
+/** Space **/
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-size: 50px;
+  font-weight: 800; }
+
+h2 {
+  color: #1b6aca;
+  font-size: 16px; }
+
+a {
+  color: #1b6aca; }
+
+b {
+  text-decoration: underline; }
+
+.grey {
+  color: #949494; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+.inline {
+  display: inline-block; }
+
+.button {
+  background: #5abd5a;
+  color: #fff;
+  text-align: center;
+  margin: 30px 0 30px; }
+
+.theme-name {
+  color: #000;
+  font-weight: 400; }
+
+.summary {
+  background: #fdfbe2;
+  padding: 10px 30px 10px 30px;
+  margin-top: 30px; }
+  .summary h1 {
+    font-size: 14px;
+    display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */
