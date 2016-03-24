@@ -10,7 +10,12 @@ function submit(emailInputFld, errorLable){
         $(emailInputFld).val('');
         $(errorLable).text('');
             $("#myModal").modal();
-        //location.reload();
+        //location.reload();    
+        
+        // notify google analytics about event
+        // ga('send', 'event', [eventCategory], [eventAction], [eventLabel], [eventValue], [fieldsObject]);
+        // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events#implementation 
+        ga('send', 'event', 'Conversion', 'Subscribe', 'Subscribe for updates and beta access');
     });
 }
         
