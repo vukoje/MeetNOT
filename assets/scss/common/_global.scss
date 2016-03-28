@@ -18,6 +18,14 @@ h2 {
   color: white;
 }
 
+a {
+  color: $light;
+
+  &:hover, &:focus {
+    color: $dark;
+  }
+}
+
 .nav {
   text-align: right;
   color: white;
@@ -56,8 +64,8 @@ h2 {
 }
 
 input {
-  background: #f2f2f2;
-  border: 1px solid #cccccc;
+  background: #eeeeee;
+  border: 1px solid #ccc;
   padding: 10px 20px 10px 20px;
   width: 100%;
   color: #999999;
@@ -67,10 +75,30 @@ input {
   }
 }
 
+.alert-show {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+   color: $dark;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $dark;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $dark;  
+}
+
+:-ms-input-placeholder {  
+   color: $dark;  
+}
+
 .button {
   background: $light;
   color: white;
-  padding: 10px;
+  padding: 11px;
   text-align: center;
   text-transform: uppercase;
 

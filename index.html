@@ -22,7 +22,6 @@
           <div class="col-sm-6 nav">
             <a data-scroll href="#benefits">BENEFITS</a>
             <a data-scroll href="#subscribe">SUBSCRIBE</a>
-            <a href="mailto:ping@meetnot.com?Subject=Hello" target="_top">CONTACT US</a>
           </div>
         </div>
 
@@ -40,22 +39,22 @@
         <div class="row center space">
           <div class="col-md-3 col-sm-6 info">
             <img src="assets/images/save_time.svg" class="img-responsive center-block">
-            <p>Save time by finding answers quickly and avoiding noise.</p>
+            <p><b>Save time</b> by finding answers quickly and avoiding noise.</p>
           </div>
 
           <div class="col-md-3 col-sm-6 info">
             <img src="assets/images/less_stress.svg" class="img-responsive center-block">
-            <p>Less strees by acting on reliable info instead of gossip and guessing.</p>
+            <p><b>Less strees</b> by acting on reliable info instead of gossip and guessing.</p>
           </div>
 
           <div class="col-md-3 col-sm-6 info">
             <img src="assets/images/increase.svg" class="img-responsive center-block">
-            <p>Increase your productivity by avoiding distractions and interruptions.</p>
+            <p><b>Increase your productivity</b> by avoiding distractions and interruptions.</p>
           </div>
 
           <div class="col-md-3 col-sm-6 info">
             <img src="assets/images/onboarding.svg" class="img-responsive center-block">
-            <p>Do faster onboarding of new teammates</p>
+            <p><b>Do faster</b> onboarding of new teammates</p>
           </div>
         </div>
 
@@ -66,13 +65,16 @@
                 <p>SUBSRIBE TO GET UPDATES AND EARLY ACCESS FOR BETA RELEASE</p>
               </div>
 
+              <div class="col-md-12 alert-show">
+                <div class="alert alert-danger" role="alert" id='errorMsg1'></div>
+              </div>
+
               <div class="col-md-8 col-sm-6">
-                 <input name="" type="text" id='email1'  placeholder="Your Email *"/>
-                 <h5 id='errorMsg1' style="color:red"></h5>
+                 <input name="" type="text" id='email1'  placeholder="Your Email *" onkeypress="return enterKeyPress1(event);"/>
               </div>
 
               <div class="col-md-4 col-sm-6">
-                <div class="button" onclick="submit(email1, '#errorMsg1');">Subscribe</div>                 
+                <div class="button" id="submit1" onclick="submit(email1, '#errorMsg1');">Subscribe</div>                 
               </div>
             </div>
           </div>
@@ -127,17 +129,17 @@
       <div class="row space center">
         <div class="col-md-4 col-sm-6 info">
             <img src="assets/images/productivity.png" class="img-responsive center-block">
-            <p>Protects your productivity sanity by allowing you to work on maker’s schedule.</p>
+            <p>Protects your <b><i><del>productivity</del></b></i> <b><i>sanity</b></i> by allowing you to work on <b><i>maker’s schedule.</b></i></p>
         </div>
 
         <div class="col-md-4 col-sm-6 info">
             <img src="assets/images/transparency.png" class="img-responsive center-block">
-            <p>Built in transparency with public channels helps you grow self-organized teams.</p>
+            <p><b><i>Built in transparency</b></i> with public channels helps you grow self-organized teams.</p>
         </div>
 
         <div class="col-md-4 col-sm-6 info">
             <img src="assets/images/inbox.png" class="img-responsive center-block">
-            <p>Zero inbox guaranteed! You hear that right, we will make it hard for you not to have zero inbox.</p>
+            <p><b><i>Zero inbox guaranteed!</b></i> You hear that right, we will make it hard for you not to have zero inbox.</p>
         </div>
 
         <div class="col-md-4 col-sm-6 info">
@@ -152,7 +154,7 @@
 
         <div class="col-md-4 col-sm-6 info">
             <img src="assets/images/time-zone.png" class="img-responsive center-block">
-            <p><b><i>Work in your own time zone</b></i>. Meet NOT is all about async communication which  makes it perfect for <b><i>remote teams</b></i>.</p>
+            <p><b><i>Work in your own time zone</b></i>. Meet NOT is all about <b><i>async</b></i> communication which  makes it perfect for <b><i>remote teams</b></i>.</p>
         </div>
       </div>
     </div>
@@ -173,13 +175,15 @@
       </div>
 
       <div class="row space">
+        <div class="col-md-12 alert-show">
+          <div class="alert alert-danger" role="alert" id='errorMsg2'></div>
+        </div>
         <div class="col-md-8 col-sm-6">
-          <input name="" type="text" id='email2' placeholder="Your Email *"/>
-          <h5 id='errorMsg2' style="color:red"></h5>
+          <input name="" type="text" id='email2' placeholder="Your Email *" onkeypress="return enterKeyPress2(event);"/>
         </div>
 
         <div class="col-md-4 col-sm-6">
-          <div class="button" onclick="submit(email2, '#errorMsg2')">Subscribe</div>
+          <div class="button" id="submit2" onclick="submit(email2, '#errorMsg2')">Subscribe</div>
         </div>
       </div>
     </div>
@@ -188,7 +192,7 @@
     <div class="copyright">
       <div class="col-md-12">
         <p><b>“Decide without meeting or email”</b></p>  
-        <p>Copyright MEETNOT 2016 | All rights reserved</p>
+        <p>Copyright MEETNOT 2016 | All rights reserved | <a href="mailto:ping@meetnot.com">CONTACT US - ping@meetnot.com</a></p>
       </div>
     </div>
 
