@@ -70,8 +70,10 @@
                 <p>SUBSRIBE TO GET UPDATES AND EARLY ACCESS FOR BETA RELEASE</p>
               </div>
 
-              <div class="col-md-10 col-md-offset-1 alert-show">
-                <div class="alert alert-danger" role="alert" id='errorMsg1'></div>
+              <div class="col-md-10 col-md-offset-1 alert-show1">
+                <div class="alert alert-danger" role="alert" id='errorMsg1'>
+                  You email address is not correct
+                </div>
               </div>
 
               <div class="col-md-7 col-md-offset-1 col-sm-6">
@@ -79,7 +81,7 @@
               </div>
 
               <div class="col-md-3 col-sm-6">
-                <div class="button" id="submit1" onclick="submit(email1, '#errorMsg1');">Subscribe</div>                 
+                <div class="button" id="submit1" onclick="submit1(email1, '#errorMsg1');">Subscribe</div>                 
               </div>
             </div>
           </div>
@@ -181,14 +183,16 @@
 
       <div class="row space center">
         <div class="col-md-10 col-md-offset-1 alert-show2">
-          <div class="alert alert-danger" role="alert" id='errorMsg2'></div>
+          <div class="alert alert-danger" role="alert" id='errorMsg2'>
+            You email address is not correct
+          </div>
         </div>
         <div class="col-md-7 col-md-offset-1 col-sm-6">
           <input name="" type="text" id='email2' placeholder="Your Email *" onkeypress="return enterKeyPress2(event);"/>
         </div>
 
         <div class="col-md-3 col-sm-6">
-          <div class="button" id="submit2" onclick="submit(email2, '#errorMsg2')">Subscribe</div>
+          <div class="button" id="submit2" onclick="submit2(email2, '#errorMsg2')">Subscribe</div>
         </div>
       </div>
     </div>
