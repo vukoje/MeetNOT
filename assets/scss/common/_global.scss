@@ -18,6 +18,14 @@ h2 {
   color: white;
 }
 
+a {
+  color: $light;
+
+  &:hover, &:focus {
+    color: $dark;
+  }
+}
+
 .nav {
   text-align: right;
   color: white;
@@ -56,27 +64,49 @@ h2 {
 }
 
 input {
-  background: #f2f2f2;
-  border: 1px solid #cccccc;
-  padding: 10px 20px 10px 20px;
+  background: #eeeeee;
+  border: 1px solid #ccc;
+  padding: 13px 20px 13px 20px;
   width: 100%;
-  color: #999999;
+  color: $dark;
 
   &:focus {
     outline:none;
   }
 }
 
+.alert-show1, .alert-show2 {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+   color: $dark;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $dark;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $dark;  
+}
+
+:-ms-input-placeholder {  
+   color: $dark;  
+}
+
 .button {
   background: $light;
   color: white;
-  padding: 10px;
+  padding: 13px;
   text-align: center;
   text-transform: uppercase;
+  box-shadow: 0 2px 0 #ce423d;
 
   &:hover {
-    transition: background 0.5s ease;
+    transition: all 0.5s ease;
     background: $dark;
+    box-shadow: 0 2px 0 #1d1f29;
     cursor: pointer;
   }
 }
@@ -148,9 +178,12 @@ input {
   margin-left: auto;
   margin-right: auto;
   top: 35px;
+  text-align: center;
 
   p {
-    color: #999999;
+    color: $light;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   input {
@@ -241,3 +274,41 @@ input {
       margin: 30px auto;
   }
 } 
+
+/* BOOTSTRAP 5 COLUMNS */
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
